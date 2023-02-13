@@ -10,6 +10,12 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      Babylonica: 'Babylonica',
+      Tangerine: 'Tangerine', 
+      AlexBrush: 'Alex Brush',
+      Caveat: 'Caveat',
+    }
   },
   plugins: [],
 }
