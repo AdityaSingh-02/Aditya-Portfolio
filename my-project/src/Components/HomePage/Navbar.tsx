@@ -1,28 +1,57 @@
-import React, { ReactElement } from 'react';
-import navbarLinks from './navbarLinks'
+import React, {
+  ReactElement,
+  ReactEventHandler,
+  ReactPropTypes,
+  useState,
+} from "react";
+import navbarLinks from "./navbarLinks";
+import Image from "next/image";
 
-const Navbar = ():ReactElement => {
+const Navbar = (props:any): ReactElement => {
+  const [isClosed, setIsOpened] = useState(true);
+
+  const handleNavbarOptions = (e: React.MouseEvent): void | MouseEvent => {
+    e.preventDefault();
+    setIsOpened((prevOption) => !prevOption);
+    props.showLinks(isClosed)
+  };
+
   return (
     <>
-        <nav className='bg-[#1e2129] sm:h-20 h-11 items-center sm:pt-4 pt-2 sm:px-28 '>
-            <div className='flex justify-between'>
-                <div>
-                    <h1 className='text-red-600 font-Tangerine sm:text-5xl text-2xl '>Aditya singh</h1>
-                </div>
-                <div className='text-white'>
-                    <ul className='hidden sm:flex sm:space-x-14 font-Caveat text-2xl text-red-600'>
-                    {navbarLinks.map(({id ,name})=>(
-                        <li key={id}>
-                            {name}
-                        </li>
-                    ))}
-                    </ul>
-                    <div className='sm:hidden'>Helo</div>
-                </div>
+      <nav className="bg-[#1e2129] sm:h-20 h-11 items-center sm:pt-4 pt-2 sm:px-28">
+        <div className="flex justify-between">
+          <div>
+            <h1 className="text-blue-600 font-Tangerine sm:text-5xl text-2xl sm:pl-0 pl-10 ">
+              Aditya singh
+            </h1>
+          </div>
+          <div className="text-white">
+            <ul className="hidden sm:flex sm:space-x-14 font-Caveat text-xl pt-2 text-blue-500">
+              {navbarLinks.map(({ id, name }) => (
+                <li key={id} className="hover:text-red-600">{name}</li>
+              ))}
+            </ul>
+            <div className="sm:hidden pr-2">
+              {isClosed ? (
+                <button onClick={handleNavbarOptions}>
+                  <Image
+                    src={"/Hamburger.svg"}
+                    alt="hamburger-svg"
+                    width={25}
+                    height={10}
+                  />
+                </button>
+              ) : (
+                <button onClick={handleNavbarOptions}>
+                  <Image src={'/Cross.svg'} alt="Cross" width={25} height={10} />
+                </button>
+              )}
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
