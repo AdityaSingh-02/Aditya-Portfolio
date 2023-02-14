@@ -26,9 +26,9 @@ const Navbar = (props:any): ReactElement => {
             </h1>
           </div>
           <div className="text-white">
-            <ul className="hidden sm:flex sm:space-x-14 font-Caveat text-xl pt-2 text-blue-500">
+            <ul className="hidden sm:flex sm:space-x-14 font-Caveat text-xl pt-2 text-blue-500 hover:cursor-pointer">
               {navbarLinks.map(({ id, name }) => (
-                <li key={id} className="hover:text-red-600">{name}</li>
+                <li key={id} className="hover:text-red-600 transition-all duration-150">{name}</li>
               ))}
             </ul>
             <div className="sm:hidden pr-2">
