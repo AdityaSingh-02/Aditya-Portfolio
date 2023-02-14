@@ -21,14 +21,14 @@ const Navbar = (props:any): ReactElement => {
       <nav className="fixed w-screen bg-[#1e2129] sm:h-20 h-11 items-center sm:pt-4 pt-2 sm:px-28">
         <div className="flex justify-between">
           <div>
-            <h1 className="text-blue-600 font-Tangerine sm:text-5xl text-2xl sm:pl-0 pl-10 ">
+            <h1 className="text-blue-700 font-Tangerine sm:text-5xl text-2xl sm:pl-0 pl-10 ">
               Aditya singh
             </h1>
           </div>
           <div className="text-white">
             <ul className="hidden sm:flex sm:space-x-14 font-Caveat text-xl pt-2 text-blue-500 hover:cursor-pointer">
               {navbarLinks.map(({ id, name }) => (
-                <li key={id} className="hover:text-red-600 transition-all duration-150">{name}</li>
+                <li key={id} className="hover:text-red-600 transition-all duration-150 ">{name}</li>
               ))}
             </ul>
             <div className="sm:hidden pr-2">

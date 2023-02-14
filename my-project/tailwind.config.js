@@ -15,6 +15,7 @@ module.exports = {
       Tangerine: 'Tangerine', 
       AlexBrush: 'Alex Brush',
       Caveat: 'Caveat',
+      Roboto: 'monospace',
     }
   },
   plugins: [],
