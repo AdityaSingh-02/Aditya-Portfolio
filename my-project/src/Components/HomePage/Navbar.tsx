@@ -18,7 +18,7 @@ const Navbar = (props:any): ReactElement => {
 
   return (
     <>
-      <nav className="bg-[#1e2129] sm:h-20 h-11 items-center sm:pt-4 pt-2 sm:px-28">
+      <nav className="fixed w-screen bg-[#1e2129] sm:h-20 h-11 items-center sm:pt-4 pt-2 sm:px-28">
         <div className="flex justify-between">
           <div>
             <h1 className="text-blue-600 font-Tangerine sm:text-5xl text-2xl sm:pl-0 pl-10 ">
