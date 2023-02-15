@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Head from "next/head";
 import NavbarMobileLinks from "./NavbarMobileLinks";
 import MainPage from "./MainPage";
+import DetailsAbout from "@/Components/AboutPage/DetailsAbout";
 
 function LandingPage(): ReactElement {
   const [showMobileLinks, updtMobileLinks] = useState(false);
@@ -32,9 +33,10 @@ function LandingPage(): ReactElement {
           hideNavbar ? "-translate-y-44" : ""
         } `}>
         <Navbar showLinks={updtMobileLinks} />
+        {showMobileLinks && <NavbarMobileLinks />}
       </div>
-      {showMobileLinks && <NavbarMobileLinks />}
       <MainPage />
+      <DetailsAbout />
     </>
   );
 }
