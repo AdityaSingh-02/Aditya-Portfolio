@@ -7,7 +7,7 @@ const navbarLinks =[
     {
         id:'2',
         name:'About',
-        to:"About"
+        to:""
     },
     {
         id:'3',

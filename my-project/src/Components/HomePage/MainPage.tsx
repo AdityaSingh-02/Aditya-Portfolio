@@ -17,26 +17,26 @@ const MainPage = (): ReactElement => {
         <div className="flex flex-col sm:space-y-4 justify-center items-center w-[60%] text-white">
           <div className="flex sm:space-x-8 space-x-4 pl-10 pt-10 sm:pt-0 sm:pl-0 hover:cursor-pointer ">
             <Link href={"https://github.com/AdityaSingh-02"} target="_blank">
-              <AiFillGithub color="blue" className="hover:animate-bounce" size={28} />
+              <AiFillGithub color="red" className="hover:animate-bounce" size={28} />
             </Link>
             <Link
               href={"https://www.linkedin.com/mwlite/in/aditya-singh-76065422b"}
               target="_blank">
-              <AiOutlineLinkedin color="blue" className="hover:animate-bounce" size={28} />
+              <AiOutlineLinkedin color="red" className="hover:animate-bounce" size={28} />
             </Link>
             <Link href={"https://www.instagram.com/aditya_op/"} target="_blank">
-              <AiOutlineInstagram color="blue" className="hover:animate-bounce" size={27} />
+              <AiOutlineInstagram color="red" className="hover:animate-bounce" size={27} />
             </Link>
             <Link
               href={"https://www.facebook.com/profile.php?id=100027346094203"}
               target="_blank">
-              <AiOutlineFacebook color="blue" className="hover:animate-bounce" size={27} />
+              <AiOutlineFacebook color="red" className="hover:animate-bounce" size={27} />
             </Link>
             <Link href={"#"} target="_blank">
-              <AiOutlineTwitter color="blue" className="hover:animate-bounce" size={27} />
+              <AiOutlineTwitter color="red" className="hover:animate-bounce" size={27} />
             </Link>
             <Link href={"#"} target="_blank">
-              <SiLeetcode color="blue" className="hover:animate-bounce" size={27} />
+              <SiLeetcode color="red" className="hover:animate-bounce" size={27} />
             </Link>
           </div>
           <div className="flex flex-col sm:space-y-1 mx-auto sm:justify-center sm:items-center">
@@ -52,7 +52,7 @@ const MainPage = (): ReactElement => {
             </p>
           </div>
         </div>
-        <div className="sm:pt-5 sm:pr-10">
+        <div className="sm:pt-5 sm:pr-10 sm:flex sm:items-center">
           <Image src={"/MyImage.jpg"} alt="Me" width={600} height={500} />
         </div>
       </div>
