@@ -1,15 +1,5 @@
 const navbarLinks =[
     {
-        id:'1',
-        name:'Home',
-        to:"/"
-    },
-    {
-        id:'2',
-        name:'About',
-        to:""
-    },
-    {
         id:'3',
         name:'Resume',
         to:"Resume"

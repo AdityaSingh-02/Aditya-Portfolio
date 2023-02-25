@@ -11,6 +11,7 @@ import Link from "next/link";
 
 const Navbar = (props: any): ReactElement => {
   const [isClosed, setIsOpened] = useState(true);
+  const [hrefLink, updtHrefLink] = useState("");
 
   const handleNavbarOptions = (e: React.MouseEvent): void | MouseEvent => {
     e.preventDefault();
@@ -18,10 +19,11 @@ const Navbar = (props: any): ReactElement => {
     props.showLinks(isClosed);
   };
 
-  const addSmoothScroll =(e:React.MouseEvent | MouseEventHandler | any):void => {
-    console.log(e)
-
-  }
+  const addSmoothScroll = (
+    e: React.MouseEvent | MouseEventHandler | any
+  ): void => {
+    console.log(e.target.value);
+  };
 
   return (
     <>
@@ -34,10 +36,20 @@ const Navbar = (props: any): ReactElement => {
           </div>
           <div className="text-white">
             <ul className="hidden sm:flex sm:space-x-14 font-Caveat text-xl pt-2 text-blue-500 hover:cursor-pointer">
+              <li className="hover:text-red-600 transition-all duration-150 ">
+                <button onClick={addSmoothScroll} value={"Home"}>
+                  Home
+                </button>
+              </li>
+              <li className="hover:text-red-600 transition-all duration-150 ">
+                <button onClick={addSmoothScroll} value={"About"}>
+                  About
+                </button>
+              </li>
               {navbarLinks.map(({ id, name, to }) => {
                 return (
                   <Link href={to}>
-                    <li onClick={addSmoothScroll}
+                    <li
                       key={id}
                       className="hover:text-red-600 transition-all duration-150 ">
                       {name}
