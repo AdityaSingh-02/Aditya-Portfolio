@@ -22,7 +22,12 @@ const Navbar = (props: any): ReactElement => {
   const addSmoothScroll = (
     e: React.MouseEvent | MouseEventHandler | any
   ): void => {
-    console.log(e.target.value);
+    const value = e.target;
+    if(value === "Home"){
+
+    }else if(value === "About"){
+      
+    }
   };
 
   return (

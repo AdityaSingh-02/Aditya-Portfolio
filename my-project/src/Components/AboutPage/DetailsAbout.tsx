@@ -15,7 +15,7 @@ const DetailsAbout = (): ReactElement => {
             <div className="sm:flex hidden">
               <Image
                 src={"/MyImage.jpg"}
-                alt="myImg"
+                alt="Aditya Singh"
                 width={600}
                 height={100}
               />
