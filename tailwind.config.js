@@ -11,8 +11,15 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'Home' : '/Home.jpg'
       },
+      fontFamily: {
+        "press": ['Press Start 2P', "cursive"],
+        "Satisfy": ['Satisfy', 'cursive']
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 }
