@@ -32,8 +32,8 @@ export default function Home() {
           </h1>
           <div className="heading flex flex-col justify-center items-center bg-[#50ffaf] text-black font-Satisfy w-[340px] md:w-[80%] px-10 py-5 rounded-md space-y-3 ">
             <p>
-              - Hey Hey! Welcom I'm delighted to have you here. My name is
-              Aditya Singh, and I'm a passionate computer science undergrad,
+              - Hey Hey! Welcom I&apos;m delighted to have you here. My name is
+              Aditya Singh, and I am a passionate computer science undergrad,
               software engineer, and full-stack web developer hailing from India
               👨🏽‍💻.
             </p>

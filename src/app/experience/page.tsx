@@ -49,7 +49,7 @@ const page = () => {
                 </p>
               </Link>
               <p className="font-mono font-semibold">
-                Bachelor's of Technologies in Computer Science and Engineering
+                Bachelor&apos;s of Technologies in Computer Science and Engineering
               </p>
               <p className="text-sm font-mono "> 2021 - 2025</p>
               <p>--</p>
