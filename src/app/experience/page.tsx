@@ -1,8 +1,8 @@
-import Navbar from "@/components/Navbar";
+"use client"
 import React from "react";
 import Link from "next/link";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
-import Left from "@/components/Left";
+
 
 const page = () => {
   return (
