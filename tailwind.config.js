@@ -14,8 +14,11 @@ module.exports = {
         'Home' : '/Home.jpg'
       },
       fontFamily: {
-        "press": ['Press Start 2P', "cursive"],
-        "Satisfy": ['Satisfy', 'cursive']
+
+        // "ubuntu": ['Ubuntu', ''],
+        // "poppins": ['Poppins',''],
+        // "roboto": ['Roboto Mono', ''],
+        // 'vibes': ['Great Vibes'],
       }
     },
   },

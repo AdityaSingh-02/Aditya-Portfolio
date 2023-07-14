@@ -1,20 +1,18 @@
 import React from "react";
-import Navbar from "@/components/Navbar";
 import {
   AiFillLinkedin,
   AiFillGithub,
   AiOutlineInstagram,
   AiOutlineTwitter,
 } from "react-icons/ai";
-import "../experience/ex.css";
 import Link from "next/link";
 
 const Connection = () => {
   return (
     <>
-      <main className="md:flex md:flex-wrap transition-all duration-200 bg-gradient-to-b from-purple-500 to-blue-400 min-h-screen flex-row md:flex-col items-center justify-between md:py-16 py-8 px-16 md:px-24 ">
-        <Navbar />
-        <div className="flex flex-col text-black font-mono font-bold text-lg md:text-xl space-y-6 md:space-y-8 pt-24 md:pt-0">
+      <main className="md:flex md:flex-wrap transition-all duration-200 bg-gradient-to-b  min-h-screen flex-row md:flex-col items-center justify-center md:py-16 py-8 px-16 md:px-24 ">
+        {/* <Navbar /> */}
+        <div className="flex flex-col text-black text-lg md:text-xl space-y-6 md:space-y-8 pt-24 md:pt-0">
           <Link
             href={"https://www.linkedin.com/mwlite/in/aditya-singh-76065422b"}
             target="_blank"

@@ -1,85 +1,88 @@
 import Navbar from "@/components/Navbar";
 import React from "react";
-import "./ex.css";
 import Link from "next/link";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
+import Left from "@/components/Left";
 
 const page = () => {
   return (
     <>
-      <main className="Mains md:flex md:flex-wrap transition-all duration-300  min-h-screen flex-row md:flex-col items-center justify-between md:py-16 py-8 px-24 ">
-        <Navbar />
-
-        <div className=" flex flex-col  md:flex-wrap font-mono space-y-9 justify-center items-center py-6">
-          <div className="heading flex flex-col justify-center items-center bg-[#50ffaf] text-black font-mono w-[340px] md:w-[100%] px-10 py-5 rounded-md space-y-3 ">
-            <h1 className="text-xl font-bold font-mono underline ">
-              Professional Experience
-            </h1>
-            <div>
-              <p className="flex font-bold text-xl">
-                <Link
-                  href={"https://summerofcode.withgoogle.com/"}
-                  target="_blank">
-                  Google Summer of Codes @Rocket.Chat
-                  <BsBoxArrowInUpRight size={12} />
-                </Link>
-              </p>
-              <p className="font-semibold underline">Software Development Intern</p>
-              <p className="font-semibold">Executed Real-Time Technical Documentation With Code-Tour Extension,<br /> Helps 90% of Contributors at Rocket.chat</p>
-              <p>May 2023 - August 2023</p>
-              <br />
-              <p className="font-bold text-xl">
-                <Link href={"https://oncampus.tech/"} target="_blank">
-                  onCampus Community <BsBoxArrowInUpRight size={12} />{" "}
-                </Link>
-              </p>
-              <p className="font-semibold underline">Tech Lead (Full Time)</p>
-              <p>April 2023 - Present</p>
-              <br />
-            </div>
-          </div>
-          <div className="heading flex flex-col justify-center items-center bg-yellow-400 text-black font-Satisfy w-[340px] md:w-[100%] px-10 py-5 rounded-md space-y-3 ">
-            <h1 className="text-xl font-bold font-mono ">Education 🏫</h1>
-            <div>
-              {""}
-              <p className="font-bold font-mono">Graduation 🧑🏽‍🎓</p>
-              <Link href={"https://www.dituniversity.edu.in/"} target="_blank">
-                <p className="flex font-bold font-mono">
-                  DIT University, India <BsBoxArrowInUpRight size={12} />
-                </p>
+      <main className="md:flex transition-all font-light duration-300 min-h-screen flex-row md:flex-col items-center justify-center pt-16 md:pt-24 py-8 px-2">
+        <div className="flex flex-col transition-all duration-200 justify-center items-center md:w-[60%] hover:bg-[#1a2540]  py-5 rounded-md space-y-3 ">
+          <h1 className="text-xl text-gray-200 ">
+            Professional Experience
+          </h1>
+          <div>
+            <p className="flex text-xl hover:text-cyan-400">
+              <Link
+                href={"https://summerofcode.withgoogle.com/"}
+                target="_blank">
+                Google Summer of Codes @Rocket.Chat
+                <BsBoxArrowInUpRight size={12} />
               </Link>
-              <p className="font-mono font-semibold">
-                Bachelor&apos;s of Technologies in Computer Science and Engineering
-              </p>
-              <p className="text-sm font-mono "> 2021 - 2025</p>
-              <p>--</p>
-              <p className="font-bold font-mono">Schooling 🎒 </p>
-              <p className="font-mono font-bold">
-                Kendriya Vidyalaya No.2 Delhi Cantt, India
-              </p>
-              <p className="font-mono text-sm">2009 - 2021</p>
-            </div>
+            </p>
+            <p className="">
+              Software Development Intern
+            </p>
+            <p className=" text-gray-400">
+              Executed Real-Time Technical Documentation With Code-Tour
+              Extension,
+              <br /> Helps 90% of Contributors at Rocket.chat
+            </p>
+            <p className="font-normal text-gray-300">May 2023 - August 2023</p>
+            <br />
+            <p className="text-xl hover:text-cyan-400">
+              <Link href={"https://oncampus.tech/"} target="_blank">
+                onCampus Community <BsBoxArrowInUpRight size={12} />{" "}
+              </Link>
+            </p>
+            <p className="">Tech Lead (Full Time)</p>
+            <p className="text-gray-300">April 2023 - Present</p>
+            <br />
           </div>
-          <div className="heading flex flex-col justify-center items-center bg-red-300 text-black font-mono w-[340px] md:w-[100%] px-10 py-5 rounded-md space-y-3 ">
-            <h1 className="text-xl font-bold font-mono ">
-              Technical Skills 👨🏽‍💻
-            </h1>
-            <div>
-              <p className="font-bold">Programming Languages</p>
-              <p>TypeScript | Java | Rust | Python | Go</p>
-              <br />
-              <p className="font-bold">FrameWorks/Technologies ⚙️</p>
-              <p>
-                ReactJs | NextJs | NodeJs | Solana | Blockchain | WEB3 | Anchor | MongoDB | MySQL
-                | Firebase | GraphQL | Redux | TailwindCSS | WebRTC | REST API
+        </div>
+        {/* Educations */}
+        <div className="heading flex flex-col justify-center items-center transition-all duration-200 hover:bg-[#1a2540] text-gray-200  md:w-[60%] md:px-10 py-5 rounded-md space-y-3 ">
+          <h1 className="text-xl text-gray-200 ">Education 🏫</h1>
+          <div>
+            {""}
+            <p className="text-gray-300 text-xl">Graduation 🧑🏽‍🎓</p>
+            <Link href={"https://www.dituniversity.edu.in/"} target="_blank">
+              <p className="flex text-lg text-gray-200 hover:text-cyan-400 transition-all duration-200 cursor-pointer">
+                DIT University, India <BsBoxArrowInUpRight size={12} />
               </p>
-              <br />
-              <p className="font-bold">Tools ⚒️ </p>
-              <p>Git | GitHub | Docker | Linux </p>
-              <br />
-              <p className="font-bold">Soft Skills </p>
-              <p>Public Speaking | Teaching | Management</p>
-            </div>
+            </Link>
+            <p className="text-gray-300">
+              Bachelor&apos;s of Technologies in Computer Science and
+              Engineering
+            </p>
+            <p className="text-sm text-gray-400 "> 2021 - 2025</p>
+            <p>--</p>
+            <p className="text-gray-300 text-xl ">Schooling 🎒 </p>
+            <p className="text-lg text-gray-200 transition-all duration-200 cursor-pointer hover:text-cyan-400">
+              Kendriya Vidyalaya No.2 Delhi Cantt, India
+            </p>
+            <p className="text-sm text-gray-400">2009 - 2021</p>
+          </div>
+        </div>
+        <div className="heading flex flex-col justify-center items-center transition-all duration-200 hover:bg-[#1a2540] text-white  md:w-[60%] md:px-10 py-5 rounded-md space-y-3 ">
+          <h1 className="text-xl  ">Technical Skills 👨🏽‍💻</h1>
+          <div>
+            <p className="text-lg text-gray-200 hover:text-cyan-400 transition-all duration-200 cursor-pointer">Programming Languages</p>
+            <p className="text-gray-300">TypeScript | Java | Rust | Python | Go</p>
+            <br />
+            <p className="text-lg text-gray-200 hover:text-cyan-400 transition-all duration-200 cursor-pointer">FrameWorks/Technologies ⚙️</p>
+            <p className="text-gray-300">
+              ReactJs | NextJs | NodeJs | Solana | Blockchain | WEB3 | Anchor |
+              MongoDB | MySQL | Firebase | GraphQL | Redux | TailwindCSS |
+              WebRTC | REST API
+            </p>
+            <br />
+            <p className="text-lg text-gray-200 hover:text-cyan-400 transition-all duration-200 cursor-pointer">Tools ⚒️ </p>
+            <p className="text-gray-300">Git | GitHub | Docker | Linux </p>
+            <br />
+            <p className="text-lg text-gray-200 hover:text-cyan-400 transition-all duration-200 cursor-pointer">Soft Skills </p>
+            <p className="text-gray-300">Public Speaking | Teaching | Management</p>
           </div>
         </div>
       </main>
