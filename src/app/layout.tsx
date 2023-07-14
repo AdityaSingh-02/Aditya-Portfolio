@@ -1,4 +1,3 @@
-"use client";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Maven_Pro } from "next/font/google";

@@ -13,7 +13,7 @@ export default function Home() {
               👨🏽‍💻Software Engineer | Full Stack Developer | Open-Source
               Contributor
             </h1>
-            <div className="transition-all duration-200 flex flex-col text-lg font-light justify-center items-center hover:bg-[#1a2540] hover:shadow-md text-gray-300  md:w-[80%] md:px-10 py-5 rounded-md space-y-3 ">
+            <div className="transition-all duration-200 flex flex-col text-lg font-light justify-center items-center hover:bg-[#1a2540] hover:shadow-md text-gray-300  md:w-[80%] px-3 md:px-10 py-5 rounded-md space-y-3 ">
               <p>
                 As a software engineer, I thrive on turning innovative ideas
                 into reality. I believe in the power of elegant and efficient
