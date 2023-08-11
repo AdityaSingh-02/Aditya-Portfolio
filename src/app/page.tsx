@@ -9,9 +9,8 @@ export default function Home() {
           <Left />
           {/* right */}
           <div className="right md:w-[50%] ">
-            <h1 className="transition-all duration-200 hover:text-cyan-400 flex justify-center items-center w-[340px] md:w-[80%] text-xl md:text-3xl  hover:bg-[#1a2540] hover:shadow-md text-gray-200 px-5 py-2 my-8 rounded-md ">
+            <h1 className="transition-all duration-200 hover:text-cyan-400 flex justify-center items-center w-[340px] md:w-[80%] text-2xl md:text-3xl  hover:bg-[#1a2540] hover:shadow-md md:text-gray-200 text-cyan-400 px-5 py-2 my-8 rounded-md ">
               👨🏽‍💻Software Engineer | Full Stack Developer | Open-Source
-              Contributor
             </h1>
             <div className="transition-all duration-200 flex flex-col text-lg font-light justify-center items-center hover:bg-[#1a2540] hover:shadow-md text-gray-300  md:w-[80%] px-3 md:px-10 py-5 rounded-md space-y-3 ">
               <p>
